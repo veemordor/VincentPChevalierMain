@@ -1,13 +1,18 @@
 {
-  "name": "new project boilerplate",
+  "name": "gulp-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "gulpfile.js",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-sass": "^3.1.0",
+    "sync": "^0.2.5"
   },
-  "author": "Vincent Chevalier",
-  "license": "ISC",
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.18.12",
@@ -17,5 +22,18 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^3.1.0",
     "sync": "^0.2.5"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VincentPChevalier/newProjectBP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VincentPChevalier/newProjectBP/issues"
+  },
+  "homepage": "https://github.com/VincentPChevalier/newProjectBP#readme"
 }
