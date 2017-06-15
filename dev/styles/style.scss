@@ -1,0 +1,46 @@
+@import 'partials/setup';
+@import 'partials/variables';
+@import 'partials/typography';
+@import 'partials/header';
+@import 'partials/about';
+
+html{
+	font-size: 10px;
+}
+
+body{
+	font-family: $bodyFont;
+	font-size: 1.8rem;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.wrapper{
+	max-width: 1180px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+section{
+	padding-bottom: 10%;
+}
+
+
+
+footer{
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	background-color: $accentColor;
+	p{
+		margin: 0;
+		color: $mediumColor;
+		padding: 15px 0;
+		text-align: center;
+	}
+}
+

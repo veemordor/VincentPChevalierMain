@@ -1,0 +1,19 @@
+.about{
+	display: flex;
+	flex-direction:row;
+}
+
+.bio-image{
+	max-width: 750px;
+	margin-right: 2%;
+	line-height: 2.7rem;
+}
+
+.bio-text{
+	display: flex;
+	flex-direction:column;
+	justify-content:space-between;
+	p{
+		margin-top: .7rem;
+	}
+}

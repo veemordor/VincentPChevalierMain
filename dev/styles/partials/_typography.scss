@@ -1,0 +1,61 @@
+@mixin header-style($font-family, $font-color, $font-size){
+	font-family: $font-family;
+	color:$font-color;
+	font-size:$font-size;
+	margin: 0;
+}
+
+//heading styles
+
+h1 { 
+	@include header-style($majorFont, $bodyColor, 2.4rem);
+	flex-grow:1;
+} 
+
+.type-feature{
+	background-color: $themeColor;
+	color:#fff;
+	padding: 2px 6px; 
+	margin-right: 4px;
+}
+
+h2{
+	@include header-style($majorFont, $bodyColor, 4.8rem);
+}
+
+h3 { 
+	@include header-style($altFont, $themeColor, 2.4rem);
+} 
+
+h4{
+	@include header-style($altFont, $bodyColor, 2.4rem);
+}
+
+//paragraph styles
+p{
+	margin: 0;
+	padding: 0;
+	line-height: 2.7rem;
+	// &::first-line{
+	// 	line-height: 0;
+	// }
+}
+
+//menu styles
+
+li a{
+	text-decoration: none;
+	color:$bodyColor;
+	&:hover{
+		color: $themeColor;
+		text-decoration: line-through;
+	}
+}
+
+//special type styles
+
+.tagline{
+	@include header-style($majorFont, $bodyColor, 4.8rem);
+	line-height: 6.2rem;
+	padding-top: 8%;
+} //blockquote

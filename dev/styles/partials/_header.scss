@@ -1,0 +1,18 @@
+header{
+	margin-top: 5%;
+	margin-bottom: 8%;
+}
+
+nav {
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+	.main-menu{
+		display: flex;
+		flex-direction:row;
+		justify-content:space-between;
+		flex-grow:1;
+		margin-left: 55px;
+	}
