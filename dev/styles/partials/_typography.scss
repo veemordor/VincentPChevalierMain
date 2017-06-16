@@ -21,10 +21,11 @@ h1 {
 
 h2{
 	@include header-style($majorFont, $bodyColor, 4.8rem);
+	margin-bottom: 4%;
 }
 
 h3 { 
-	@include header-style($altFont, $themeColor, 2.4rem);
+	@include header-style($altFont, $bodyColor, 2.4rem);
 } 
 
 h3.skills__section--item {
@@ -45,6 +46,25 @@ p{
 	// }
 }
 
+//link styles
+
+a{
+	color: $themeColor;
+	transition: all .3s;
+	&:hover{
+		color:$bodyColor;
+	}
+}
+
+.blog__post a{
+	@include header-style($altFont, $bodyColor, 2.4rem);
+	line-height:3rem;
+	text-decoration: none;
+	&:hover, &:focus{
+		color:$themeColor;
+	}
+}
+
 //menu styles
 
 li a{
@@ -63,3 +83,4 @@ li a{
 	line-height: 6.2rem;
 	padding-top: 8%;
 } //blockquote
+

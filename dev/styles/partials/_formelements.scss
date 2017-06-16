@@ -1,7 +1,14 @@
 button{
+	border:none;
 	display: inline-block;
 	width: 180px;
 	height: 40px;
 	background-color: $themeColor;
 	color: #fff;
+	transition: all .5s;
+	&:hover{
+		background-color: rgba($themeColor, 0.2);
+		border: 3px solid $themeColor;
+		color:$themeColor;
+	}
 }
