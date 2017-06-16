@@ -1,8 +1,12 @@
 @import 'partials/setup';
 @import 'partials/variables';
 @import 'partials/typography';
+@import 'partials/formelements';
+@import 'partials/graphics';
 @import 'partials/header';
 @import 'partials/about';
+@import 'partials/skills';
+@import 'partials/gallery';
 
 html{
 	font-size: 10px;
@@ -17,6 +21,9 @@ ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	// li{
+	// 	display: inline-block;
+	// }
 }
 
 .wrapper{
@@ -29,6 +36,9 @@ section{
 	padding-bottom: 10%;
 }
 
+img{
+	width: 100%;
+}
 
 
 footer{

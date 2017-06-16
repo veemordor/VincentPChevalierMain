@@ -1,0 +1,29 @@
+.skills__section{
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	h2{
+		margin-bottom: 5%;
+	}
+	.skills__section--container{
+		width: calc(100% / 5 - 20px);
+		margin: 20px 10px;
+		display: inline-block;
+		text-align: center;
+		padding: 2px 4px;
+		@media (max-width: 940px){
+			width: calc(100% / 4 - 20px);
+		}
+		@media (max-width: 768px){
+			width: calc(100% / 3 - 20px);
+		}
+		@media (max-width: 480px){
+			width: calc(100% / 2 - 20px);
+		}
+	}
+	.skills__section--container:last-of-type{
+		@media (max-width: 768px){
+			justify-self:center;}
+	}
+}
+

@@ -27,6 +27,10 @@ h3 {
 	@include header-style($altFont, $themeColor, 2.4rem);
 } 
 
+h3.skills__section--item {
+	@include header-style($altFont, $bodyColor, 2.4rem);
+}
+
 h4{
 	@include header-style($altFont, $bodyColor, 2.4rem);
 }

@@ -4,16 +4,28 @@
 }
 
 .bio-image{
-	max-width: 750px;
 	margin-right: 2%;
 	line-height: 2.7rem;
+	width: 58%;
 }
 
 .bio-text{
 	display: flex;
 	flex-direction:column;
 	justify-content:space-between;
-	p{
-		margin-top: .7rem;
+	width: 40%;
+
+}
+
+.bio-text p:first-of-type{
+	margin-top: -6px;
+	&::first-line{
+		color:$themeColor;
+		font-weight: bold;
 	}
+}
+
+p.image-caption {
+	color: $paleColor;
+	font-size: 1.4rem;
 }
