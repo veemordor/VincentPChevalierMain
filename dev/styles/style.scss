@@ -8,6 +8,7 @@
 @import 'partials/skills';
 @import 'partials/gallery';
 @import 'partials/blog';
+@import 'partials/cv';
 @import 'partials/contact';
 
 html{
@@ -35,11 +36,7 @@ ul{
 }
 
 section{
-	padding-bottom: 10%;
-}
-
-img{
-	width: 100%;
+	margin-bottom: 10%;
 }
 
 
@@ -47,7 +44,7 @@ footer{
 	display: flex;
 	flex-direction:row;
 	justify-content:space-between;
-	background-color: $accentColor;
+	background-color: rgba($paleColor, .4);
 	p{
 		margin: 0;
 		color: $mediumColor;

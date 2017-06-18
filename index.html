@@ -8,8 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="/public/styles/style.css">
 </head>
 <body>
-	<div class="wrapper">
-		<header>
+	<header>
+		<div class="wrapper">
 			<nav>
 				<h1><span class="type-feature">V</span>incent Pierre Chevalier</h1>
 				<ul class="main-menu">
@@ -20,23 +20,26 @@
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
-			<blockquote class="tagline">Hey there! My name is Vincent and I am a fresh-faced front end web developer living in Toronto.</blockquote>
-		</header>
-		<main>
+			<blockquote class="tagline">Hey there! My name is Vincent and I'm a front end web developer living in Toronto.</blockquote>
+	</header>
+	<main>
+		<div class="wrapper">
 			<section id="about" class="about">
 				<article class="bio-image">
 					<img src="assets/TopherVincent.gif" alt="8-Bit GIF Image by Topher McCulloch">
 				</article>
 				<aside class="bio-text">
-					<p>As a web developer, I love pushing myself to build innovative and creative solutions to ... I bring my experience as a contemporary artist to solve problems and look at design through a critical lens. When I’m not coding you can find me drawing inspiration from art house cinema and internet memes. Now that I’m done bootcamp I’m excited to apply my dev skill to creating interactive user experiences and digital art works. To do so, I hope to hone my knowledge of front end technologies in order continue developing clean and modular code.</p>
-					<button>Contact Me!</button>
-					<a href="#" class="arrow"><i><!-- arrow --></i></a><a href="" class="arrow"><i><!-- arrow --></i></a>
+					<p> I’m a diligent, energetic, and hard-working creative with a background in digital video production and non-profit arts administration. As a web developer, I love pushing myself to build dynamic, clean code for beautiful, responsive websites and apps. I pride myself on my strong work ethic and enjoy working in collaborative environments with a passionate team. When I’m not coding you can find me drawing inspiration from art house cinema and internet memes.</p>
+					<a href="#" class="button">Contact Me!</a>
 					<p class="image-caption">8-Bit GIF Image by Topher McCulloch</p>
 				</article>
 			</section>
-			<section class="skills">
+		</div>
+		<section class="skills">
+			<div class="wrapper">
 				<h2>Skills</h2>
 				<article>
+					<p>I have a strong foundation in HTML5, CSS3, including Sass, and responsive design, and a good understanding of ES6. I love learning new coding languages and continually work on growing my knowledge base for future projects.</p>
 					<ul class="skills__section">
 						<li class="skills__section--container">
 							<i class="devicon-html5-plain"></i>
@@ -80,7 +83,9 @@
 						</li>
 					</ul>
 				</article>
-			</section>
+			</div><!--wrapper-->
+		</section>
+		<div class="wrapper">
 			<section class="portfolio">
 				<h2>Portfolio</h2>
 				<ul class="gallery">
@@ -89,14 +94,35 @@
 							<img src="./assets/placeholder-box.png" alt="Total Eclipse Of The Heart - JQuery Project Image">
 						</figure>
 						<figcaption>
-							<a href="#">totaleclipseofthehe.art</a>
-							<p>A Bonnie Tyler Experience made with JQuery</p>
+							<h3>Totaleclipseofthehe.art</h3>
+							<p>A Bonnie Tyler Experience made in collaboration with Shannon Draper</p>
+							<ul class="portfolio-skills">
+								<li><h5>Applied Skills and Tools</h5>
+									<ul class="portfolio-skills__items">
+										<li>HTML5 &amp; CSS3</li>
+										<li>jQuery</li>
+										<li>Responsive design</li>
+										<li>Paired programming</li>
+										<li>Graphic design and Photoshop</li>
+									</ul>
+								</li>
+							</ul>
+							<a href="http://totaleclipseofthehe.art" class="button">View Live</a>
 						</figcaption>
 					</li>
 					<li class="gallery__item">
 						<figcaption>
-							<a href="#">Mojo</a>
-							<p>A responsive conversion of a PSD file</p>
+							<h3>Responsive PSD Conversion</h3>
+							<p>A responsive conversion for Mojo, a mock creative agency.</p>
+							<ul class="portfolio-skills">
+								<li><h5>Applied Skills and Tools</h5>
+									<ul class="portfolio-skills__items">
+										<li>HTML5 &amp; CSS3</li>
+										<li>Responsive design</li>
+									</ul>
+								</li>
+							</ul>
+							<a href="#" class="button">View Live</a>
 						</figcaption>
 						<figure>
 							<img src="./assets/placeholder-box.png" alt="Screenshot of Mojo: A Responsive PSD Conversion">
@@ -108,76 +134,91 @@
 						</figure>
 						<figcaption>
 							<a href="#">Cum Ergo Propter Hoc</a>
-							<p>This project correlates info from the Movie DB and Catholic Liturical Calendar API's to tell the user the Saint day for the series finale of a television show.</p>
+							<p>This project correlates info from the Movie DB and Catholic Liturical Calendar API's.</p>
+							<ul class="portfolio-skills">
+								<li><h5>Applied Skills and Tools</h5>
+									<ul class="portfolio-skills__items">
+										<li>HTML5 &amp; CSS3</li>
+										<li>ES6 and APIs</li>
+										<li>Responsive design</li>
+									</ul>
+								</li>
+							</ul>
+							<a href="#" class="button">View Live</a>
 						</figcaption>
 					</li>
 					<li class="gallery__item">
 						<figcaption>
 							<a href="#">Clock Props</a>
-							<p>An app that uses React and Firebase to track instances of props in feature films.</p>
+							<p>An app that tracks instances of theatrical properties (props) in feature films.</p>
+							<ul class="portfolio-skills">
+								<li><h5>Applied Skills and Tools</h5>
+									<ul class="portfolio-skills__items">
+										<li>HTML5 &amp; CSS3</li>
+										<li>React</li>
+										<li>Firebase</li>
+										<li>Responsive design</li>
+									</ul>
+								</li>
+							</ul>
+							<a href="https://clockprops-e2216.firebaseapp.com/" class="button">View Live</a>
 						</figcaption>
 						<figure>
 							<img src="./assets/placeholder-box.png" alt="Screenshot of Clock Props, React and Firebase Project">
 						</figure>
 					</li>
-					<li class="gallery__item">
-						<p class="highlight">Hi!</p>
-						<p>Think any of these projects look cool? Want me on your team?</p>
-						<button>Contact Me</button>
-					</li>
 				</ul>
 			</section>
-			<section class="blogging">
-				<h2>Blog Posts</h2>
-				<article class="blog">
-					<article class="blog__post">
-						<img src="assets/placeholder-rectangle.png" alt="">
-						<div class="blog__post--info">
-						<a href="#">Blog Post Title</a>
-							<p>Date</p>
-						</div>
-					</article>
-					<article class="blog__post">
-						<img src="assets/placeholder-rectangle.png" alt="">
-						<div class="blog__post--info">
-						<a href="#">Another Blog Post</a>
-							<p>Date</p>
-						</div>
-					</article>
-					<article class="blog__post">
-						<img src="assets/placeholder-rectangle.png" alt="">
-						<div class="blog__post--info">
-						<a href="#">My Third Chapter</a>
-							<p>Date</p>
-						</div>
-					</article>
-				</article><!--blog-->
-			</section>
+		</div><!--wrapper-->
+		<section class="cv">
+			<div class="wrapper">
+				<blockquote class="cv-promo">Interested in knowing more?</blockquote>
+				<article class="cv__items">
+					<aside class="cv__items--content">
+						<p>Summary of my qualifications as a web developer TO BE FILLED!</p>
+					</aside>
+					<aside class="cv__items--content">
+						<button>Download CV</button>
+					</aside>
+				</article>
+			</div><!--wrapper-->
+		</section>
+		<div class="wrapper">
 			<section class="contact">
 				<h2>Contact</h2>
 				<article class="contact__info">
-					<aside class="contact__info--details">
-						<h4>Email</h4>
-						<a href="#">info@vincentpchevalier.com</a>
-						<h4>Phone</h4>
-						<p>647-571-2352</p>
-						<a href="">LinkedIn</a>
-						<a href="">Facebook</a>
-						<a href=""></a>
-						<a href=""></a>
+					<aside class="contact__details">
+						<div class="contact__details--item">
+							<h4>Email</h4>
+							<a href="#">info@vincentpchevalier.com</a>
+						</div>
+						<div class="contact__details--item">
+							<h4>Phone</h4>
+							<p>647-571-2352</p>
+						</div>
+						<div class="contact__details--item">
+							<a href="https://www.linkedin.com/in/vincent-pierre-chevalier-9b773014?ppe=1">LinkedIn</a>
+							<a href="https://twitter.com/hyperflesh">Twitter</a>
+							<a href="https://www.facebook.com/vincentpchevalier">Facebook</a>
+							<a href="https://medium.com/@hyperflesh">Medium</a>
+							
+						</div>
 					</aside>
-					<article class="contact__info--form">
+					<article class="contact__form">
 						<form action="">
-							<input type="text" placeholder="Your Name">
-							<input type="email" placeholder="Your Email">
-							<input type="textarea" placeholder="Write me a message">
-							<input name="submitContactForm" type="submit" value="Hi!">
+							<label for="name">Name</label>
+							<input type="text" name="name" placeholder="Your Name">
+							<label for="email">Email</label>
+							<input type="email" name="email" placeholder="Your Email">
+							<label for="message">Your Message</label>
+							<input type="textarea" name="message" placeholder="Write me a message">
+							<input name="submitContactForm" type="submit" value="Contact Me">
 						</form>
 					</article>
 				</article>
 			</section>
 		</main>
-	</div><!--wrapper-->
+	</div>
 	<footer>
 		<div class="wrapper">
 			<p>Vincent Chevalier © 2017</p>

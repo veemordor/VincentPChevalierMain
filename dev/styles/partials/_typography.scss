@@ -25,15 +25,17 @@ h2{
 }
 
 h3 { 
-	@include header-style($altFont, $bodyColor, 2.4rem);
+	@include header-style($altFont, $themeColor, 2.4rem);
 } 
 
 h3.skills__section--item {
-	@include header-style($altFont, $bodyColor, 2.4rem);
+	@include header-style($altFont, $themeColor, 1.4rem);
+	margin-top: 15%;
 }
 
 h4{
-	@include header-style($altFont, $bodyColor, 2.4rem);
+	@include header-style($bodyFont, $themeColor, 1.8rem);
+	line-height:2.7rem;
 }
 
 //paragraph styles
@@ -41,9 +43,6 @@ p{
 	margin: 0;
 	padding: 0;
 	line-height: 2.7rem;
-	// &::first-line{
-	// 	line-height: 0;
-	// }
 }
 
 //link styles
@@ -56,20 +55,28 @@ a{
 	}
 }
 
-.blog__post a{
-	@include header-style($altFont, $bodyColor, 2.4rem);
-	line-height:3rem;
+a.button{
+	border: 3px solid $themeColor;
+	display: inline-block;
+	padding: 10px 50px;
+	background-color: $themeColor;
+	color: #fff;
 	text-decoration: none;
-	&:hover, &:focus{
+	transition: all .5s;
+	&:hover{
+		background-color: rgba(255,255,255, 0);
+		border: 3px solid $themeColor;
 		color:$themeColor;
 	}
 }
 
+
 //menu styles
 
-li a{
+nav li a{
 	text-decoration: none;
 	color:$bodyColor;
+	font-size: 1.4rem;
 	&:hover{
 		color: $themeColor;
 		text-decoration: line-through;
@@ -83,4 +90,9 @@ li a{
 	line-height: 6.2rem;
 	padding-top: 8%;
 } //blockquote
+
+.cv-promo{
+	@include header-style($majorFont, $bodyColor, 4.8rem);
+	line-height: 6.2rem;
+}
 
