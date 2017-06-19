@@ -11,7 +11,10 @@ h1 {
 	@include header-style($majorFont, $bodyColor, 2.4rem);
 	flex-grow:1;
 	@media (max-width: 940px){
-		@include header-style($majorFont, $bodyColor, 2rem);
+		font-size:2rem;
+	}
+	@media (max-width: 4800px){
+		font-size:1.8rem;
 	}
 } 
 
@@ -33,6 +36,9 @@ h2{
 
 h3 { 
 	@include header-style($altFont, $themeColor, 2.4rem);
+	@media (max-width: 768px){
+		font-size:1.8rem;
+	}
 } 
 
 h3.skills__section--item {

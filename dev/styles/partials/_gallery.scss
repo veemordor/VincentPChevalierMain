@@ -3,6 +3,7 @@
 	flex-direction:column;
 	justify-content:space-between;
 	flex-wrap:wrap;
+	
 }
 
 .gallery__item{
@@ -73,25 +74,35 @@ figure{
 	flex-direction:column;
 	align-items: center;
 	justify-content:center;
-	padding: 30px;
+	padding-right:50px;
 	width: 50%;
-	img{
-		width: 80%;
-	}
 	@media (max-width: 940px){
 		width: 100%;
+		padding: 0;
 		&:nth-child(2n){
 			order:-1;
 		}
 	}
+	&:nth-child(2n){
+		padding-left:50px;
+		padding-right:0;
+	}
+}
+
+.portfolio-devices{
+	width: 100%;
 	@media (max-width: 768px){
 		display: none;
 	}
-
 }
 
-.larger-figure img{
-	width: 90%;
+.portfolio-tile{
+	display: none;
+	@media (max-width: 768px){
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
 }
 
 figcaption{
