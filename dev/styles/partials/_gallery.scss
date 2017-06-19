@@ -33,6 +33,12 @@
 	}
 }
 
+@media (max-width: 768px){
+	.gallery__item{
+		flex-wrap:nowrap;
+	}
+}
+
 .gallery__item--sub{
 	display: flex;
 	flex-direction:column;
@@ -86,6 +92,9 @@ figure{
 	&:nth-child(2n){
 		padding-left:50px;
 		padding-right:0;
+		@media (max-width: 768px){
+			padding-left:0;
+		}
 	}
 }
 
@@ -102,6 +111,7 @@ figure{
 		display: block;
 		width: 100%;
 		padding: 0;
+		box-shadow: 5px 5px 5px #ccc;
 	}
 }
 
