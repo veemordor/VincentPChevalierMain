@@ -36,7 +36,16 @@ ul{
 }
 
 section{
-	margin-bottom: 10%;
+	margin-bottom: 125px;
+	@media (max-width: 940px){
+		margin-bottom: 100px;
+	}
+	@media (max-width: 768px){
+		margin-bottom: 75px;
+	}
+	@media (max-width: 480px){
+		margin-bottom: 50px;
+	}
 }
 
 

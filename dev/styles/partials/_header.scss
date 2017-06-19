@@ -1,18 +1,91 @@
 header{
-	margin-top: 5%;
-	margin-bottom: 8%;
+	margin-top: 65px;
+	margin-bottom: 100px;
+	@media (max-width: 940px){
+		margin-bottom: 55px;
+	}
+	@media (max-width: 768px){
+		margin-bottom: 40px;
+	}
 }
 
 nav {
 	display: flex;
 	flex-direction:row;
 	justify-content:space-between;
+	h1{
+		@media (max-width: 940px){
+			flex-grow:1;
+		}
+	}
 }
 
-	.main-menu{
-		display: flex;
-		flex-direction:row;
-		justify-content:space-between;
-		flex-grow:1;
-		margin-left: 55px;
+.menu-bar{
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	flex-shrink:-1;
+	flex-basis:400px;
+	margin-left: 0;
+	@media (max-width: 940px){
+		width: 100%;
+		display: block;
 	}
+}
+
+.main-menu{
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	flex-grow:1;
+	flex-basis:300px;
+	margin-left: 0;
+	@media (max-width: 940px){
+		display: none;
+	}
+}
+
+.overlay.menu {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.99);
+	color: white;
+}
+
+.overlay ul {
+	flex-direction: column;
+}
+
+.overlay .hamburger{
+	display: block;
+	font-size: 3rem;
+	text-align: right;
+	color:$themeColor;
+}
+
+.hamburger{
+	display: none;
+	@media (max-width: 940px) {
+			display: block;
+			font-size: 25px;
+			text-align: right;
+		}
+}
+
+
+
+@media (max-width: 940px) {
+
+	.menu ul {
+		display: none;
+	}
+	
+	.menu ul.show {
+		display: flex;
+	}
+
+}

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Vincent P Chevalier</title>
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Roboto+Mono|Rubik:700" rel="stylesheet">
@@ -12,13 +13,16 @@
 		<div class="wrapper">
 			<nav>
 				<h1><span class="type-feature">V</span>incent Pierre Chevalier</h1>
-				<ul class="main-menu">
-					<li><a href="#about">About</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#cv">CV</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
+				<div class="menu-bar">
+					<p class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></p>
+					<ul class="main-menu">
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#cv">CV</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
 			</nav>
 			<blockquote class="tagline">Hey there! My name is Vincent and I'm a front end web developer living in Toronto.</blockquote>
 	</header>
@@ -27,11 +31,11 @@
 			<section id="about" class="about">
 				<article class="bio-image">
 					<img src="assets/TopherVincent.gif" alt="8-Bit GIF Image by Topher McCulloch">
+					<p class="image-caption">8-Bit GIF Image by Topher McCulloch</p>
 				</article>
 				<aside class="bio-text">
-					<p> I’m a diligent, energetic, and hard-working creative with a background in digital video production and non-profit arts administration. As a web developer, I love pushing myself to build dynamic, clean code for beautiful, responsive websites and apps. I pride myself on my strong work ethic and enjoy working in collaborative environments with a passionate team. When I’m not coding you can find me drawing inspiration from art house cinema and internet memes.</p>
-					<a href="#" class="button">Contact Me!</a>
-					<p class="image-caption">8-Bit GIF Image by Topher McCulloch</p>
+					<p> I’m an energetic, diligent, and hard-working creative with a background in digital video production and non-profit arts administration. As a web developer, I love pushing myself to build dynamic, clean code for beautiful, responsive websites and apps. I pride myself on my strong work ethic and enjoy working in collaborative environments with a passionate team. When I’m not coding you can find me drawing inspiration from art house cinema and internet memes.</p>
+					<a href="#contact" class="button">Contact Me!</a>
 				</article>
 			</section>
 		</div>
@@ -41,43 +45,43 @@
 				<article>
 					<ul class="skills__section">
 						<li class="skills__section--container">
-							<i class="devicon-html5-plain"></i>
+							<i class="devicon devicon-html5-plain"></i>
 							<h3 class="skills__section--item">html5</h3>
 						</li>
 						<li class="skills__section--container">
-							<i class="devicon-css3-plain"></i>
+							<i class="devicon devicon-css3-plain"></i>
 							<h3 class="skills__section--item">css3</h3>
 						</li>
 						<li class="skills__section--container">
-							<i class="devicon-sass-original"></i>
+							<i class="devicon devicon-sass-original"></i>
 							<h3 class="skills__section--item">sass</h3>
 						</li>
 						<li class="skills__section--container">
-							<i class="devicon-javascript-plain"></i>
+							<i class="devicon devicon-javascript-plain"></i>
 							<h3 class="skills__section--item">javascript</h3>
 						</li>
 						<li class="skills__section--container">
-							<i class="devicon-jquery-plain"></i>
+							<i class="devicon devicon-jquery-plain"></i>
 							<h3 class="skills__section--item">jquery</h3>
 						</li>
 						<li class="skills__section--container">
-							<i class="devicon-git-plain"></i>
+							<i class="devicon devicon-git-plain"></i>
 							<h3 class="skills__section--item">git</h3>
 						</li>
 						<li class="skills__section--container">
-							<i class="devicon-gulp-plain"></i>
+							<i class="devicon devicon-gulp-plain"></i>
 							<h3 class="skills__section--item">gulp</h3>
 						</li>
 						<li class="skills__section--container">
-							<i class="devicon-react-original"></i>
+							<i class="devicon devicon-react-original"></i>
 							<h3 class="skills__section--item">react</h3>
 						</li>
 						<li class="skills__section--container">
-							<i class="devicon-photoshop-plain"></i>
+							<i class="devicon devicon-photoshop-plain"></i>
 							<h3 class="skills__section--item">adobe photoshop</h3>
 						</li>
 						<li class="skills__section--container">
-							<i class="devicon-illustrator-plain"></i>
+							<i class="devicon devicon-illustrator-plain"></i>
 							<h3 class="skills__section--item">adobe illustrator</h3>
 						</li>
 					</ul>
@@ -95,36 +99,40 @@
 						<figcaption>
 							<h3>Totaleclipseofthehe.art</h3>
 							<p>A Bonnie Tyler Experience made in collaboration with Shannon Draper.</p>
-							<ul class="portfolio-skills">
-								<li><h5>Applied Skills and Tools</h5>
-									<ul class="portfolio-skills__items">
-										<li>HTML5 &amp; CSS3</li>
-										<li>Javascript &amp; jQuery</li>
-										<li>Responsive design</li>
-										<li>Paired programming</li>
-										<li>Graphic design and Photoshop</li>
-									</ul>
-								</li>
-							</ul>
-							<a href="http://totaleclipseofthehe.art" class="button">View Live</a>
+							<div class="gallery__item--sub">
+								<ul class="portfolio-skills">
+									<li><h5>Applied Skills and Tools</h5>
+										<ul class="portfolio-skills__items">
+											<li>HTML5 &amp; CSS3</li>
+											<li>Javascript &amp; jQuery</li>
+											<li>Responsive design</li>
+											<li>Paired programming</li>
+											<li>Graphic design and Photoshop</li>
+										</ul>
+									</li>
+								</ul>
+								<a href="http://totaleclipseofthehe.art" class="button">View Live</a>
+							</div>
 						</figcaption>
 					</li>
 					<li class="gallery__item">
 						<figcaption>
 							<h3>Responsive PSD Conversion</h3>
 							<p>A responsive conversion for Mojo, a mock creative agency.</p>
-							<ul class="portfolio-skills">
-								<li><h5>Applied Skills and Tools</h5>
-									<ul class="portfolio-skills__items">
-										<li>HTML5 &amp; CSS3</li>
-										<li>Responsive design</li>
-									</ul>
-								</li>
-							</ul>
-							<a href="#" class="button">View Live</a>
+							<div class="gallery__item--sub">
+								<ul class="portfolio-skills">
+									<li><h5>Applied Skills and Tools</h5>
+										<ul class="portfolio-skills__items">
+											<li>HTML5 &amp; CSS3</li>
+											<li>Responsive design</li>
+										</ul>
+									</li>
+								</ul>
+								<a href="#" class="button">View Live</a>
+							</div>
 						</figcaption>
-						<figure>
-							<img src="./assets/total-eclipse-portfolio.png" alt="Screenshot of Mojo: A Responsive PSD Conversion">
+						<figure class="larger-figure">
+							<img src="./assets/mojo-responsive.png" alt="Screenshot of Mojo: A Responsive PSD Conversion">
 						</figure>
 					</li>
 					<li class="gallery__item">
@@ -134,42 +142,46 @@
 						<figcaption>
 							<h3>Cum Ergo Propter Hoc</h3>
 							<p>A project that correlates info from the Movie DB and Catholic Liturical Calendar API's based on the user's input of favourite TV show.</p>
-							<ul class="portfolio-skills">
-								<li><h5>Applied Skills and Tools</h5>
-									<ul class="portfolio-skills__items">
-										<li>HTML5 &amp; CSS3</li>
-										<li>Javascript (ES6)</li>
-										<li>Ajax</li>
-										<li>Responsive design</li>
-									</ul>
-								</li>
-							</ul>
-							<a href="#" class="button">View Live</a>
+							<div class="gallery__item--sub">
+								<ul class="portfolio-skills">
+									<li><h5>Applied Skills and Tools</h5>
+										<ul class="portfolio-skills__items">
+											<li>HTML5 &amp; CSS3</li>
+											<li>Javascript (ES6)</li>
+											<li>Ajax</li>
+											<li>Responsive design</li>
+										</ul>
+									</li>
+								</ul>
+								<a href="#" class="button">View Live</a>
+							</div>
 						</figcaption>
 					</li>
 					<li class="gallery__item">
 						<figcaption>
 							<h3>Clock Props</h3>
 							<p>An app that tracks instances of theatrical properties (props) in feature films.</p>
-							<ul class="portfolio-skills">
-								<li><h5>Applied Skills and Tools</h5>
-									<ul class="portfolio-skills__items">
-										<li>HTML5 &amp; CSS3</li>
-										<li>Javascript (ES6)</li>
-										<li>React</li>
-										<li>Firebase</li>
-										<li>Responsive design</li>
-									</ul>
-								</li>
-							</ul>
-							<a href="https://clockprops-e2216.firebaseapp.com/" class="button">View Live</a>
+							<div class="gallery__item--sub">
+								<ul class="portfolio-skills">
+									<li><h5>Applied Skills and Tools</h5>
+										<ul class="portfolio-skills__items">
+											<li>HTML5 &amp; CSS3</li>
+											<li>Javascript (ES6)</li>
+											<li>React</li>
+											<li>Firebase</li>
+											<li>Responsive design</li>
+										</ul>
+									</li>
+								</ul>
+								<a href="https://clockprops-e2216.firebaseapp.com/" class="button">View Live</a>
+							</div>
 						</figcaption>
-						<figure>
+						<figure class="larger-figure">
 							<img src="./assets/clock-props-portfolio.png" alt="Screenshot of Clock Props, React and Firebase Project">
 						</figure>
 					</li>
 				</ul>
-			</section>
+			</section><!--portfolio-->
 		</div><!--wrapper-->
 		<section class="cv" id="cv">
 			<div class="wrapper">
@@ -183,7 +195,7 @@
 					</aside>
 				</article>
 			</div><!--wrapper-->
-		</section>
+		</section><!--cv-->
 		<div class="wrapper">
 			<section class="contact" id="contact">
 				<h2>Contact</h2>
@@ -202,7 +214,6 @@
 							<a href="https://twitter.com/hyperflesh">Twitter</a>
 							<a href="https://www.facebook.com/vincentpchevalier">Facebook</a>
 							<a href="https://medium.com/@hyperflesh">Medium</a>
-							
 						</div>
 					</aside>
 					<article class="contact__form">
@@ -217,7 +228,7 @@
 						</form>
 					</article>
 				</article>
-			</section>
+			</section><!--contact-->
 		</main>
 	</div>
 	<footer>
@@ -225,6 +236,7 @@
 			<p>Vincent Chevalier © 2017</p>
 		</div>
 	</footer>
-	<script src="/public/scripts/app.js"></script>
+	<script src="https://use.fontawesome.com/b631f946e4.js"></script>
+	<script src="./public/scripts/main.js"></script>
 </body>
 </html>

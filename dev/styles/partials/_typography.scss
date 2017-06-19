@@ -10,6 +10,9 @@
 h1 { 
 	@include header-style($majorFont, $bodyColor, 2.4rem);
 	flex-grow:1;
+	@media (max-width: 940px){
+		@include header-style($majorFont, $bodyColor, 2rem);
+	}
 } 
 
 .type-feature{
@@ -21,7 +24,11 @@ h1 {
 
 h2{
 	@include header-style($majorFont, $bodyColor, 4.8rem);
-	margin-bottom: 4%;
+	margin-bottom: 40px;
+	@media (max-width: 940px){
+		@include header-style($majorFont, $bodyColor, 3.8rem);
+		margin-bottom: 45px;
+	}
 }
 
 h3 { 
@@ -67,12 +74,16 @@ a.button{
 	padding: 10px 30px;
 	background-color: $themeColor;
 	color: #fff;
+	text-align: center;
 	text-decoration: none;
 	transition: all .3s;
 	&:hover{
 		background-color: rgba(255,255,255, 0);
 		border: 3px solid $themeColor;
 		color:$themeColor;
+	}
+	@media (max-width: 940px){
+		padding: 10px 35px;
 	}
 }
 
@@ -94,11 +105,24 @@ nav li a{
 .tagline{
 	@include header-style($majorFont, $bodyColor, 4.8rem);
 	line-height: 6.2rem;
-	padding-top: 8%;
+	padding-top: 80px; 
+	@media (max-width: 940px){
+		font-size:3.8rem;
+		line-height: 5.3rem;
+		padding-top: 55px; 
+	}
+	@media (max-width: 768px){
+		font-size: 2.8rem;
+		line-height: 4rem;
+		padding-top: 40px;
+	}
 } //blockquote
 
 .cv-promo{
 	@include header-style($majorFont, $bodyColor, 4.8rem);
 	line-height: 6.2rem;
+	@media (max-width: 940px){
+		@include header-style($majorFont, $bodyColor, 3rem);
+	}
 }
 

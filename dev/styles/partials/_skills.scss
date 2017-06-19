@@ -20,12 +20,12 @@
 			margin: 20px 15px;
 		}
 		@media (max-width: 768px){
-			width: calc(100% / 3 - 40px);
-			margin: 20px 20px;
+			width: calc(100% / 3 - 30px);
+			margin: 20px 15px;
 		}
 		@media (max-width: 480px){
-			width: calc(100% / 2 - 50px);
-			margin: 20px 25px;
+			width: calc(100% / 2 - 40px);
+			margin: 20px 20px;
 		}
 	}
 }

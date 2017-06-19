@@ -1,12 +1,19 @@
 .about{
 	display: flex;
 	flex-direction:row;
+	@media (max-width: 940px){
+		flex-direction:column;
+	}
 }
 
 .bio-image{
-	margin-right: 5%;
+	margin-right: 50px;
 	line-height: 2.7rem;
 	width: 50%;
+	@media (max-width: 940px){
+		width: 100%;
+		margin-bottom: 40px;
+	}
 }
 
 .bio-text{
@@ -15,6 +22,22 @@
 	justify-content:space-between;
 	width: 45%;
 	align-items: flex-start;
+	margin-bottom: 30px;
+	p{
+		flex-shrink:1;
+	}
+	@media (max-width: 940px){
+		width: 100%;
+		margin-bottom:0;
+
+	}
+}
+
+.bio-text p{
+	margin-bottom: 0px;
+	@media (max-width: 940px){
+		margin-bottom: 30px;
+	}
 }
 
 .bio-text p:first-of-type{

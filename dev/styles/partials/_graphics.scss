@@ -2,7 +2,13 @@ img{
 	width: 100%;
 }
 
-i{
+.devicon{
 	color:$themeColor;
 	font-size: 10rem;
+	@media (max-width: 768px){
+		font-size: 8rem;
+	}
+	@media (max-width: 480px){
+		font-size: 6rem;
+	}
 }
