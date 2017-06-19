@@ -13,11 +13,11 @@
 			<nav>
 				<h1><span class="type-feature">V</span>incent Pierre Chevalier</h1>
 				<ul class="main-menu">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Skills</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#cv">CV</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 			<blockquote class="tagline">Hey there! My name is Vincent and I'm a front end web developer living in Toronto.</blockquote>
@@ -35,11 +35,10 @@
 				</article>
 			</section>
 		</div>
-		<section class="skills">
+		<section class="skills" id="skills">
 			<div class="wrapper">
 				<h2>Skills</h2>
 				<article>
-					<p>I have a strong foundation in HTML5, CSS3, including Sass, and responsive design, and a good understanding of ES6. I love learning new coding languages and continually work on growing my knowledge base for future projects.</p>
 					<ul class="skills__section">
 						<li class="skills__section--container">
 							<i class="devicon-html5-plain"></i>
@@ -86,21 +85,21 @@
 			</div><!--wrapper-->
 		</section>
 		<div class="wrapper">
-			<section class="portfolio">
+			<section class="portfolio" id="portfolio">
 				<h2>Portfolio</h2>
 				<ul class="gallery">
 					<li class="gallery__item">
 						<figure>
-							<img src="./assets/placeholder-box.png" alt="Total Eclipse Of The Heart - JQuery Project Image">
+							<img src="./assets/total-eclipse-portfolio.png" alt="Total Eclipse Of The Heart - JQuery Project Image">
 						</figure>
 						<figcaption>
 							<h3>Totaleclipseofthehe.art</h3>
-							<p>A Bonnie Tyler Experience made in collaboration with Shannon Draper</p>
+							<p>A Bonnie Tyler Experience made in collaboration with Shannon Draper.</p>
 							<ul class="portfolio-skills">
 								<li><h5>Applied Skills and Tools</h5>
 									<ul class="portfolio-skills__items">
 										<li>HTML5 &amp; CSS3</li>
-										<li>jQuery</li>
+										<li>Javascript &amp; jQuery</li>
 										<li>Responsive design</li>
 										<li>Paired programming</li>
 										<li>Graphic design and Photoshop</li>
@@ -125,21 +124,22 @@
 							<a href="#" class="button">View Live</a>
 						</figcaption>
 						<figure>
-							<img src="./assets/placeholder-box.png" alt="Screenshot of Mojo: A Responsive PSD Conversion">
+							<img src="./assets/total-eclipse-portfolio.png" alt="Screenshot of Mojo: A Responsive PSD Conversion">
 						</figure>
 					</li>
 					<li class="gallery__item">
 						<figure>
-							<img src="./assets/placeholder-box.png" alt="Screenshot of Cum Ergo Propter Hoc, API Project">
+							<img src="./assets/total-eclipse-portfolio.png" alt="Screenshot of Cum Ergo Propter Hoc, API Project">
 						</figure>
 						<figcaption>
-							<a href="#">Cum Ergo Propter Hoc</a>
-							<p>This project correlates info from the Movie DB and Catholic Liturical Calendar API's.</p>
+							<h3>Cum Ergo Propter Hoc</h3>
+							<p>A project that correlates info from the Movie DB and Catholic Liturical Calendar API's based on the user's input of favourite TV show.</p>
 							<ul class="portfolio-skills">
 								<li><h5>Applied Skills and Tools</h5>
 									<ul class="portfolio-skills__items">
 										<li>HTML5 &amp; CSS3</li>
-										<li>ES6 and APIs</li>
+										<li>Javascript (ES6)</li>
+										<li>Ajax</li>
 										<li>Responsive design</li>
 									</ul>
 								</li>
@@ -149,12 +149,13 @@
 					</li>
 					<li class="gallery__item">
 						<figcaption>
-							<a href="#">Clock Props</a>
+							<h3>Clock Props</h3>
 							<p>An app that tracks instances of theatrical properties (props) in feature films.</p>
 							<ul class="portfolio-skills">
 								<li><h5>Applied Skills and Tools</h5>
 									<ul class="portfolio-skills__items">
 										<li>HTML5 &amp; CSS3</li>
+										<li>Javascript (ES6)</li>
 										<li>React</li>
 										<li>Firebase</li>
 										<li>Responsive design</li>
@@ -164,27 +165,27 @@
 							<a href="https://clockprops-e2216.firebaseapp.com/" class="button">View Live</a>
 						</figcaption>
 						<figure>
-							<img src="./assets/placeholder-box.png" alt="Screenshot of Clock Props, React and Firebase Project">
+							<img src="./assets/clock-props-portfolio.png" alt="Screenshot of Clock Props, React and Firebase Project">
 						</figure>
 					</li>
 				</ul>
 			</section>
 		</div><!--wrapper-->
-		<section class="cv">
+		<section class="cv" id="cv">
 			<div class="wrapper">
 				<blockquote class="cv-promo">Interested in knowing more?</blockquote>
 				<article class="cv__items">
 					<aside class="cv__items--content">
-						<p>Summary of my qualifications as a web developer TO BE FILLED!</p>
+						<p>I have a strong foundation in HTML5, CSS3, including Sass, and responsive design, and a good understanding of ES6. I love learning new coding languages and continually work on growing my knowledge base for future projects.</p>
 					</aside>
 					<aside class="cv__items--content">
-						<button>Download CV</button>
+						<a href="#" class="button">Download CV</a>
 					</aside>
 				</article>
 			</div><!--wrapper-->
 		</section>
 		<div class="wrapper">
-			<section class="contact">
+			<section class="contact" id="contact">
 				<h2>Contact</h2>
 				<article class="contact__info">
 					<aside class="contact__details">
@@ -207,11 +208,11 @@
 					<article class="contact__form">
 						<form action="">
 							<label for="name">Name</label>
-							<input type="text" name="name" placeholder="Your Name">
+							<input type="text" name="name">
 							<label for="email">Email</label>
-							<input type="email" name="email" placeholder="Your Email">
+							<input type="email" name="email">
 							<label for="message">Your Message</label>
-							<input type="textarea" name="message" placeholder="Write me a message">
+							<input type="textarea" name="message">
 							<input name="submitContactForm" type="submit" value="Contact Me">
 						</form>
 					</article>

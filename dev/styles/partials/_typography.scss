@@ -38,11 +38,16 @@ h4{
 	line-height:2.7rem;
 }
 
+h5{
+	@include header-style($altFont, $themeColor, 1.6rem);
+	margin: 30px 0 10px;
+}
+
 //paragraph styles
 p{
 	margin: 0;
 	padding: 0;
-	line-height: 2.7rem;
+	line-height: 2.5rem;
 }
 
 //link styles
@@ -50,6 +55,7 @@ p{
 a{
 	color: $themeColor;
 	transition: all .3s;
+	font-size: 1.4rem;
 	&:hover{
 		color:$bodyColor;
 	}
@@ -58,11 +64,11 @@ a{
 a.button{
 	border: 3px solid $themeColor;
 	display: inline-block;
-	padding: 10px 50px;
+	padding: 10px 30px;
 	background-color: $themeColor;
 	color: #fff;
 	text-decoration: none;
-	transition: all .5s;
+	transition: all .3s;
 	&:hover{
 		background-color: rgba(255,255,255, 0);
 		border: 3px solid $themeColor;
@@ -71,12 +77,12 @@ a.button{
 }
 
 
+
 //menu styles
 
 nav li a{
 	text-decoration: none;
 	color:$bodyColor;
-	font-size: 1.4rem;
 	&:hover{
 		color: $themeColor;
 		text-decoration: line-through;
