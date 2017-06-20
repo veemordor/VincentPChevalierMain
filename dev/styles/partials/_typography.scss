@@ -65,6 +65,15 @@ p{
 	line-height: 2.5rem;
 }
 
+.about p{
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+}
+
+figcaption p, figcaption li{
+	color:$bodyColor;
+}
+
 //link styles
 
 a{
@@ -73,6 +82,13 @@ a{
 	font-size: 1.4rem;
 	&:hover, &:focus{
 		color:$bodyColor;
+	}
+}
+
+.contact a{
+	color:$bodyColor;
+	&:hover, &:focus{
+		color:$themeColor;
 	}
 }
 
