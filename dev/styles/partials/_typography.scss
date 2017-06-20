@@ -10,11 +10,13 @@
 h1 { 
 	@include header-style($majorFont, $bodyColor, 2.4rem);
 	flex-grow:1;
-	@media (max-width: 940px){
-		font-size:2rem;
-	}
-	@media (max-width: 480px){
-		font-size:1.8rem;
+	.responsive-head{
+		@media (max-width: 940px){
+			font-size:2rem;
+		}
+		@media (max-width: 768px){
+			display: none;
+		}
 	}
 } 
 
@@ -128,7 +130,8 @@ nav li a{
 	@include header-style($majorFont, $bodyColor, 4.8rem);
 	line-height: 6.2rem;
 	@media (max-width: 940px){
-		@include header-style($majorFont, $bodyColor, 3rem);
+		font-size:3rem;
+		line-height: 3.8rem;
 	}
 }
 

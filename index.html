@@ -13,7 +13,7 @@
 	<header>
 		<div class="wrapper">
 			<nav class="menu-bar">
-				<h1><span class="type-feature">V</span>incent Pierre Chevalier</h1>
+				<h1><span class="type-feature">V</span><span class="responsive-head">incent Pierre Chevalier</span></h1><!--name is hidden for mobile-->
 					<p class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></p>
 					<ul class="main-menu">
 						<li><a href="#about">About</a></li>
@@ -36,13 +36,14 @@
 					<p> I’m an energetic, diligent, and hard-working creative with a background in digital video production and non-profit arts administration. As a web developer, I love pushing myself to build dynamic, clean code for beautiful, responsive websites and apps. I pride myself on my strong work ethic and enjoy working in collaborative environments with a passionate team. When I’m not coding you can find me drawing inspiration from art house cinema and internet memes.</p>
 					<a href="#contact" class="button">Contact Me!</a>
 				</article>
-			</section>
+			</section><!--about-->
 		</div>
 		<section class="skills" id="skills">
 			<div class="wrapper">
 				<h2>Skills</h2>
 				<article>
 					<ul class="skills__section">
+						<!--following icons from Devicon http://konpa.github.io/devicon/-->
 						<li class="skills__section--container">
 							<i class="devicon devicon-html5-plain"></i>
 							<h3 class="skills__section--item">html5</h3>
@@ -86,7 +87,7 @@
 					</ul>
 				</article>
 			</div><!--wrapper-->
-		</section>
+		</section><!--skills-->
 		<div class="wrapper">
 			<section class="portfolio" id="portfolio">
 				<h2>Portfolio</h2>
@@ -111,9 +112,12 @@
 										</ul>
 									</li>
 								</ul>
-								<a href="http://totaleclipseofthehe.art" class="button">View Live</a>
+								<div class="portfolio-buttons">
+									<a href="http://totaleclipseofthehe.art" class="button">View Live</a>
+									<a href="https://github.com/VincentPChevalier/TotalEclipse" class="button">View on Github</a>
+								</div>
 							</div>
-						</figcaption>
+						</figcaption><!--Total Eclipse of the Heart-->
 					</li>
 					<li class="gallery__item">
 						<figcaption>
@@ -131,17 +135,19 @@
 										</ul>
 									</li>
 								</ul>
-								<a href="https://clockprops-e2216.firebaseapp.com/" class="button">View Live</a>
+								<div class="portfolio-buttons">
+									<a href="https://clockprops-e2216.firebaseapp.com/" class="button">View Live</a>
+									<a href="https://github.com/VincentPChevalier/clockprops" class="button">View on Github</a>
+								</div>
 							</div>
 						</figcaption>
 						<figure class="larger-figure">
 							<img src="./assets/clock-props-tile.png" class="portfolio-tile" alt="Screenshot of Clock Props, React and Firebase Project">
 							<img src="./assets/clock-props-responsive.png" class="portfolio-devices" alt="Screenshot of Clock Props, React and Firebase Project">
-						</figure>
+						</figure><!--Clock Props-->
 					</li>
 					<li class="gallery__item">
 						<figure>
-							<!-- <img src="./assets/cumergo-tile.png" class="portfolio-tile" alt="Screenshot of Mojo: A Responsive PSD Conversion"> -->
 							<img src="./assets/cumergo_tvmonitor.png" alt="Screenshot of Cum Ergo Propter Hoc, API Project">
 						</figure>
 						<figcaption>
@@ -152,15 +158,18 @@
 									<li><h5>Applied Skills and Tools</h5>
 										<ul class="portfolio-skills__items">
 											<li>HTML5 &amp; CSS3</li>
-											<li>Javascript (ES6)</li>
+											<li>Javascript &amp; jQuery</li>
 											<li>Ajax</li>
 											<li>Responsive design</li>
 										</ul>
 									</li>
 								</ul>
-								<a href="#" class="button">View Live</a>
+								<div class="portfolio-buttons">
+									<a href="#" class="button">View Live</a>
+									<a href="#" class="button">View on Github</a>
+								</div>
 							</div>
-						</figcaption>
+						</figcaption><!--Cum Ergo Propter Hoc-->
 					</li>
 					<li class="gallery__item">
 						<figcaption>
@@ -175,13 +184,16 @@
 										</ul>
 									</li>
 								</ul>
-								<a href="#" class="button">View Live</a>
+								<div class="portfolio-buttons">
+									<a href="#" class="button">View Live</a>
+									<a href="#" class="button">View on Github</a>
+								</div>
 							</div>
 						</figcaption>
 						<figure class="larger-figure">
 							<img src="./assets/mojo-tile.png" class="portfolio-tile" alt="Screenshot of Mojo: A Responsive PSD Conversion">
 							<img src="./assets/mojo-responsive.png" class="portfolio-devices" alt="Screenshot of Mojo: A Responsive PSD Conversion">
-						</figure>
+						</figure><!--Mojo-->
 					</li>
 				</ul>
 			</section><!--portfolio-->
@@ -206,7 +218,7 @@
 					<aside class="contact__details">
 						<div class="contact__details--item">
 							<h4>Email</h4>
-							<a href="#">info@vincentpchevalier.com</a>
+							<a href="mailto:info@vincentpchevalier.com">info@vincentpchevalier.com</a>
 						</div>
 						<div class="contact__details--item">
 							<h4>Phone</h4>
@@ -215,7 +227,6 @@
 						<div class="contact__details--item">
 							<a href="https://www.linkedin.com/in/vincent-pierre-chevalier-9b773014?ppe=1">LinkedIn</a>
 							<a href="https://twitter.com/hyperflesh">Twitter</a>
-							<a href="https://www.facebook.com/vincentpchevalier">Facebook</a>
 							<a href="https://github.com/VincentPChevalier/">Github</a>
 							<a href="https://medium.com/@hyperflesh">Medium</a>
 						</div>

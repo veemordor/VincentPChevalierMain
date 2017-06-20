@@ -10,6 +10,9 @@
 	margin-right: 50px;
 	line-height: 2.7rem;
 	width: 50%;
+	@media (max-width: 1030px){
+		width: 50%;
+	}
 	@media (max-width: 940px){
 		width: 100%;
 		margin-bottom: 40px;
@@ -25,6 +28,9 @@
 	margin-bottom: 30px;
 	p{
 		flex-shrink:1;
+	}
+	@media (max-width: 1030px){
+		width: 50%;
 	}
 	@media (max-width: 940px){
 		width: 100%;
