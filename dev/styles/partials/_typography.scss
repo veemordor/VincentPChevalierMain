@@ -71,7 +71,7 @@ a{
 	color: $themeColor;
 	transition: all .3s;
 	font-size: 1.4rem;
-	&:hover{
+	&:hover, &:focus{
 		color:$bodyColor;
 	}
 }
@@ -90,6 +90,9 @@ a.button{
 		border: 3px solid $themeColor;
 		color:$themeColor;
 	}
+	&:focus{
+		outline:2px dotted orange;
+	}
 	@media (max-width: 940px){
 		padding: 10px 35px;
 	}
@@ -102,7 +105,7 @@ a.button{
 nav li a{
 	text-decoration: none;
 	color:$bodyColor;
-	&:hover{
+	&:hover, &:focus{
 		color: $themeColor;
 		text-decoration: line-through;
 	}

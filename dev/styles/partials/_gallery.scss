@@ -3,7 +3,12 @@
 	flex-direction:column;
 	justify-content:space-between;
 	flex-wrap:wrap;
-	
+	a{
+		font-size: 1.6rem;
+	}
+	a.button{
+		font-size: 1.4rem;
+	}
 }
 
 .gallery__item{
