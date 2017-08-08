@@ -154,3 +154,16 @@ nav li a{
 	}
 }
 
+.new{
+	border: 3px solid $themeColor;
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: #fff;
+	color: $themeColor;
+	text-align: center;
+	text-decoration: none;
+	@media(max-width: 768px){
+		width: 100%;
+	}
+}
+
